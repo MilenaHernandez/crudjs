@@ -9,21 +9,29 @@
   </head>
 
   <body>
-    <div class="w3-container w3-blue">
-      <h1><a style="text-decoration: none;" href="https://www.configuroweb.com" >Para más desarrollos accede a <b>ConfiguroWeb</b></a></h1>      
+  <div class="principal">
+    <div class="w3-container">
+      <h1><b>CRUD BASICO CON JS</b></h1>
     </div>
-  <form class="w3-container" onsubmit="event.preventDefault()">
-    <input class="w3-input" id="fname" name="fname" placeholder="Nombre" />
-    <input class="w3-input" id="lname" name="lname" placeholder="Apellido" />
-    <button class="w3-button w3-round w3-yellow" onclick="clearForm()">Limpiar Formulario</button>
-    <br /><br />
+    <form onsubmit="event.preventDefault()">
+      <div class="datos">
+        <input class="w3-input" id="fname" name="fname" placeholder="Nombre" />
+        <input class="w3-input" id="lname" name="lname" placeholder="Apellido" />
+      </div>
 
-    <button class="w3-button w3-round w3-blue" onclick="create()">Crear</button>
-    <button class="w3-button w3-round w3-blue" onclick="update()">Actualizar</button>
-    <button class="w3-button w3-round w3-blue" onclick="deleteItem()">Eliminar</button>
-    <br /><br />
-    <select id="panel" size="20" onclick="panelClick()"> </select>
-  </form>
+      <div class="boton">
+        <button class="w3-button w3-yellow" onclick="clearForm()">Limpiar Formulario</button>
+      </div>
+
+      <div class="botones">
+        <button class="w3-button  w3-green" onclick="create()">Crear</button>
+        <button class="w3-button  w3-blue" onclick="update()">Actualizar</button>
+        <button class="w3-button  w3-red" onclick="deleteItem()">Eliminar</button>
+      </div>
+
+      <select id="panel" size="10" onclick="panelClick()"> </select>
+    </form>
+  </div>
 
     <script src="index-w3s.js">
     </script>
